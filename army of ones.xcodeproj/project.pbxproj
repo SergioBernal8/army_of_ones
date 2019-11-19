@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99B4F161162C26B2CFC24C70 /* Pods_army_of_ones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54C389BAD0B4F3A0DF5496 /* Pods_army_of_ones.framework */; };
 		B8F3837F23843B97006C4257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3837E23843B97006C4257 /* AppDelegate.swift */; };
 		B8F3838123843B97006C4257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3838023843B97006C4257 /* SceneDelegate.swift */; };
 		B8F3838323843B97006C4257 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3838223843B97006C4257 /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A54C389BAD0B4F3A0DF5496 /* Pods_army_of_ones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_army_of_ones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		937F61B2990E459E39647BDF /* Pods-army of ones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-army of ones.release.xcconfig"; path = "Target Support Files/Pods-army of ones/Pods-army of ones.release.xcconfig"; sourceTree = "<group>"; };
 		B8F3837B23843B97006C4257 /* army of ones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "army of ones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F3837E23843B97006C4257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F3838023843B97006C4257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B8F3839123843B9D006C4257 /* army of onesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "army of onesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F3839523843B9D006C4257 /* army_of_onesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = army_of_onesTests.swift; sourceTree = "<group>"; };
 		B8F3839723843B9D006C4257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F338BD6E87DFAC5B1F1DE3DA /* Pods-army of ones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-army of ones.debug.xcconfig"; path = "Target Support Files/Pods-army of ones/Pods-army of ones.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B4F161162C26B2CFC24C70 /* Pods_army_of_ones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1707C20AC1B780B36C983294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F338BD6E87DFAC5B1F1DE3DA /* Pods-army of ones.debug.xcconfig */,
+				937F61B2990E459E39647BDF /* Pods-army of ones.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A268229254FD15455E16541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A54C389BAD0B4F3A0DF5496 /* Pods_army_of_ones.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8F3837223843B97006C4257 = {
 			isa = PBXGroup;
 			children = (
 				B8F3837D23843B97006C4257 /* army of ones */,
 				B8F3839423843B9D006C4257 /* army of onesTests */,
 				B8F3837C23843B97006C4257 /* Products */,
+				1707C20AC1B780B36C983294 /* Pods */,
+				8A268229254FD15455E16541 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8F3839A23843B9D006C4257 /* Build configuration list for PBXNativeTarget "army of ones" */;
 			buildPhases = (
+				0ED75C62736D71DDB7D9DA17 /* [CP] Check Pods Manifest.lock */,
 				B8F3837723843B97006C4257 /* Sources */,
 				B8F3837823843B97006C4257 /* Frameworks */,
 				B8F3837923843B97006C4257 /* Resources */,
+				2DF60A6443AA6EA75BE16EBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED75C62736D71DDB7D9DA17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-army of ones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DF60A6443AA6EA75BE16EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-army of ones/Pods-army of ones-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-army of ones/Pods-army of ones-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-army of ones/Pods-army of ones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8F3837723843B97006C4257 /* Sources */ = {
@@ -360,6 +429,7 @@
 		};
 		B8F3839B23843B9D006C4257 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F338BD6E87DFAC5B1F1DE3DA /* Pods-army of ones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +447,7 @@
 		};
 		B8F3839C23843B9D006C4257 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937F61B2990E459E39647BDF /* Pods-army of ones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
