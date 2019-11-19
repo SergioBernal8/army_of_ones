@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        CurrencyService().getGBGCurrency { (response: Result<Currency, ErrorResponse>) in
+            switch response {                
+            case .success(let data):
+                print("")
+            case .failure(let error):
+                print("")
+            }
+        }
     }
-
-
+    
+    
 }
 
