@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCg-QI-tlP">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="kkw-a9-FYH">
+            <objects>
+                <viewController id="fCg-QI-tlP" customClass="MainViewController" customModule="army_of_ones" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPs-gG-swY">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Army Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yv-ke-ehR">
+                                <rect key="frame" x="264.5" y="50" width="281.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WON-pD-JDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riL-vc-PE8">
+                                <rect key="frame" x="355" y="126" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1US-go-a6Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="gMP-Wh-AJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-Ra-xl9">
+                                <rect key="frame" x="0.0" y="266" width="810" height="814"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-Xz-nGm">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="814"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF1-G9-ZlM">
+                                                <rect key="frame" x="63" y="0.0" width="54" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="miL-4q-dKX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fr7-sx-jzo" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gbp"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-LW-RSA">
+                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="ket-cG-mbA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="v2G-LW-RSA" firstAttribute="top" secondItem="fr7-sx-jzo" secondAttribute="bottom" id="W6N-F7-yfJ"/>
+                                            <constraint firstItem="fr7-sx-jzo" firstAttribute="top" secondItem="fF1-G9-ZlM" secondAttribute="bottom" id="WKD-WW-gvE"/>
+                                            <constraint firstItem="fF1-G9-ZlM" firstAttribute="top" secondItem="9a9-Xz-nGm" secondAttribute="top" id="ncY-6w-hVw"/>
+                                            <constraint firstAttribute="bottom" secondItem="v2G-LW-RSA" secondAttribute="bottom" id="sC5-Dr-nzJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v1v-GJ-EFB">
+                                        <rect key="frame" x="210" y="0.0" width="180" height="814"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxT-Td-KbZ">
+                                                <rect key="frame" x="63.5" y="0.0" width="53" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="Jfh-Tj-h6z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-ye-9pN" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="eur"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQC-2g-s1W">
+                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="Utm-IF-noI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="BQC-2g-s1W" secondAttribute="bottom" id="OO8-VY-NJw"/>
+                                            <constraint firstItem="lxT-Td-KbZ" firstAttribute="top" secondItem="v1v-GJ-EFB" secondAttribute="top" id="Syb-ZE-70O"/>
+                                            <constraint firstItem="BQC-2g-s1W" firstAttribute="top" secondItem="kWG-ye-9pN" secondAttribute="bottom" id="Uuh-fg-adl"/>
+                                            <constraint firstItem="kWG-ye-9pN" firstAttribute="top" secondItem="lxT-Td-KbZ" secondAttribute="bottom" id="cu1-6z-1R9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S5P-3a-Egl">
+                                        <rect key="frame" x="420" y="0.0" width="180" height="814"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35g-wT-sGV">
+                                                <rect key="frame" x="66" y="0.0" width="48" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="yk7-kj-nKj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIO-y7-TsU" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33" width="180" height="748"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="jpy"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-Mj-wkG">
+                                                <rect key="frame" x="67" y="781" width="46" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="fTH-Um-SOa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3q1-Mj-wkG" secondAttribute="bottom" id="8Ic-4G-H4f"/>
+                                            <constraint firstItem="35g-wT-sGV" firstAttribute="top" secondItem="S5P-3a-Egl" secondAttribute="top" id="Bcx-aq-6cY"/>
+                                            <constraint firstItem="vIO-y7-TsU" firstAttribute="top" secondItem="35g-wT-sGV" secondAttribute="bottom" id="OyH-93-RDF"/>
+                                            <constraint firstItem="3q1-Mj-wkG" firstAttribute="top" secondItem="vIO-y7-TsU" secondAttribute="bottom" id="uKP-Jz-jtT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-7O-v2e">
+                                        <rect key="frame" x="630" y="0.0" width="180" height="814"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-5J-2S4">
+                                                <rect key="frame" x="65.5" y="0.0" width="49.5" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="XtR-HK-pSq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-Dz-zYQ" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="brl"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA5-gh-7uR">
+                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33.5" id="Rwo-o5-ARm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kA4-5J-2S4" firstAttribute="top" secondItem="gtz-7O-v2e" secondAttribute="top" id="MSt-Ed-ENI"/>
+                                            <constraint firstAttribute="bottom" secondItem="TA5-gh-7uR" secondAttribute="bottom" id="OxO-aJ-swy"/>
+                                            <constraint firstItem="TA5-gh-7uR" firstAttribute="top" secondItem="IA9-Dz-zYQ" secondAttribute="bottom" id="mU8-0r-H6C"/>
+                                            <constraint firstItem="IA9-Dz-zYQ" firstAttribute="top" secondItem="kA4-5J-2S4" secondAttribute="bottom" id="xc6-nk-fFy"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Yv-ke-ehR" firstAttribute="top" secondItem="sXY-iL-hQE" secondAttribute="top" constant="50" id="0uG-b8-QXA"/>
+                            <constraint firstItem="riL-vc-PE8" firstAttribute="top" secondItem="5Yv-ke-ehR" secondAttribute="bottom" constant="36" id="2ii-FQ-dhu"/>
+                            <constraint firstItem="tIf-Ra-xl9" firstAttribute="top" secondItem="riL-vc-PE8" secondAttribute="bottom" constant="100" id="7q5-0Z-VZh"/>
+                            <constraint firstItem="sXY-iL-hQE" firstAttribute="bottom" secondItem="tIf-Ra-xl9" secondAttribute="bottom" id="POw-oI-JxM"/>
+                            <constraint firstItem="5Yv-ke-ehR" firstAttribute="centerX" secondItem="NPs-gG-swY" secondAttribute="centerX" id="WXc-9b-Tnc"/>
+                            <constraint firstItem="riL-vc-PE8" firstAttribute="centerX" secondItem="NPs-gG-swY" secondAttribute="centerX" id="WbQ-VU-pDd"/>
+                            <constraint firstAttribute="trailing" secondItem="tIf-Ra-xl9" secondAttribute="trailing" id="atg-wc-tNc"/>
+                            <constraint firstItem="tIf-Ra-xl9" firstAttribute="leading" secondItem="sXY-iL-hQE" secondAttribute="leading" id="uxW-Ws-nYI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sXY-iL-hQE"/>
+                    </view>
+                    <connections>
+                        <outlet property="brlCountLabel" destination="TA5-gh-7uR" id="3Rr-gu-Y2t"/>
+                        <outlet property="eurCountLabel" destination="BQC-2g-s1W" id="kK2-FJ-jz6"/>
+                        <outlet property="gbpCountLabel" destination="v2G-LW-RSA" id="b55-6G-dk2"/>
+                        <outlet property="inputTextField" destination="riL-vc-PE8" id="aaz-3x-0Vl"/>
+                        <outlet property="jpyCountLabel" destination="3q1-Mj-wkG" id="2US-sv-ORI"/>
+                        <outlet property="stackView" destination="tIf-Ra-xl9" id="a5n-C7-FWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXR-aB-pXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46.666666666666664" y="87.777777777777771"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brl" width="768" height="432"/>
+        <image name="eur" width="600" height="401"/>
+        <image name="gbp" width="640" height="320"/>
+        <image name="jpy" width="740" height="505"/>
+    </resources>
+</document>
