@@ -7,5 +7,5 @@
 //
 
 protocol CurrencyRepository {
-    func getGBGCurrency(completion: @escaping ServerResponse<Currency>)
+    func getGBGCurrency(completion: @escaping ServerResponse<CurrencyResponse>)
 }

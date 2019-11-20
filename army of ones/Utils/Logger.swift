@@ -12,6 +12,7 @@ enum LogCase {
     case Network
     case Debug
     case Other
+    case Error
 }
 
 class Logger {
@@ -25,6 +26,8 @@ class Logger {
             print("💻 \(Swift.type(of: className)):: \(message)")
         case .Other:
             print("📻 \(Swift.type(of: className)) - \(message)")
+        case .Error:
+            print("🚫 \(Swift.type(of: className)) - \(message)")
         }
     }
     

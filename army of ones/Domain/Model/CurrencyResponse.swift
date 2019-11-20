@@ -1,5 +1,5 @@
 //
-//  Currency.swift
+//  CurrencyResponse.swift
 //  army of ones
 //
 //  Created by Sergio Bernal Reyes on 11/19/19.
@@ -8,8 +8,10 @@
 
 import Foundation
 
-struct Currency: Codable {
+struct CurrencyResponse: Codable {
     
-    let id: Int?
-    let name: String?
+    let base: String
+    let success: Bool
+    let timestamp: Int
+    let rates: [String:Double]
 }

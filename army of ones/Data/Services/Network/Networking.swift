@@ -16,7 +16,7 @@ protocol Networking {
 class NetworkService: Networking, BaseService {
     
     func printError(with error: ErrorResponse) {
-        Logger.shared.log(from: self, with: .Network, message: "\(error.errorType)::\(error.localizedDescription)")
+        Logger.shared.log(from: self, with: .Error, message: "\(error.errorType)::\(error.errorMessage)")
     }
     
     func printResponse<T>(response: T) {
@@ -27,32 +27,39 @@ class NetworkService: Networking, BaseService {
     
     @discardableResult
     func performRequest<T: Codable> (url: URLConvertible, method: HTTPMethod, parameters: Parameters?, headers: HTTPHeaders?, handler: @escaping ServerResponse<T>) -> DataRequest {
-        let request = Alamofire.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseData {
-            (response: DataResponse<Data>) in
-            if let error = response.error {
-                let code = response.response?.statusCode
+        Logger.shared.log(from: self, with: .Network, message: "Request to url: \(url)")
+        let request = Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate().response{ urlResponse in
+            let code = urlResponse.response?.statusCode ?? 404
+            if let error = urlResponse.error {
                 if code == 404 {
                     let error = ErrorResponse(errorType: .badRequest, errorMessage: error.localizedDescription)
                     self.printError(with: error)
                     handler(.failure(error))
                 } else {
-                    let error = ErrorResponse(errorType: .serverError, errorMessage: error.localizedDescription)
-                    self.printError(with: error)
-                    handler(.failure(error))
+                    let err = ErrorResponse(errorType: .serverError, errorMessage: "Code: \(code) \(error.localizedDescription)")
+                    self.printError(with: err)
+                    handler(.failure(err))
                 }
             } else {
-                if let responseData = response.data {
-                    let data: T? = JsonDecoder().decode(data: responseData)
-                    if let parsedObject = data {
-                        self.printResponse(response: parsedObject)
-                        handler(.success(parsedObject))
+                if code == 200 {
+                    if let responseData = urlResponse.data {
+                        let data: T? = JsonDecoder().decode(data: responseData)
+                        if let parsedObject = data {
+                            self.printResponse(response: parsedObject)
+                            handler(.success(parsedObject))
+                        } else {
+                            let text = String(data: responseData, encoding: .utf8)
+                            let error = ErrorResponse(errorType: .unableToParseResponse, errorMessage: "Cannot parse object \(String(describing: text))")
+                            self.printError(with: error)
+                            handler(.failure(error))
+                        }
                     } else {
-                        let error = ErrorResponse(errorType: .unableToParseResponse, errorMessage: "Cannot parse object")
+                        let error = ErrorResponse(errorType: .unableToParseResponse, errorMessage: "Empty Data")
                         self.printError(with: error)
                         handler(.failure(error))
                     }
                 } else {
-                    let error = ErrorResponse(errorType: .unableToParseResponse, errorMessage: "Cannot parse object")
+                    let error = ErrorResponse(errorType: .serverError, errorMessage: "Code: \(code) \(urlResponse.response.debugDescription)")
                     self.printError(with: error)
                     handler(.failure(error))
                 }
@@ -64,4 +71,3 @@ class NetworkService: Networking, BaseService {
     
     private init() {}
 }
-

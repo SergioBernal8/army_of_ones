@@ -8,7 +8,14 @@
 
 class CurrencyService: CurrencyRepository {
     
-    func getGBGCurrency(completion: @escaping ServerResponse<Currency>) {
-        NetworkService.shared.performRequest(url: "", method: .get, parameters: nil, headers: nil, handler: completion)
+    func getGBGCurrency(completion: @escaping ServerResponse<CurrencyResponse>) {
+        let headers = [
+            "x-rapidapi-host": "fixer-fixer-currency-v1.p.rapidapi.com",
+            "x-rapidapi-key": "f93be5bf6cmsh491a765fb7bb67dp1b891bjsncd371d93148e"
+        ]
+        
+        let url = Constants.Endpoint.baseUrl + Constants.Endpoint.PATH_LATEST + "?base=USD&symbols=GBP,JPY,EUR,BRL" //GBP%252CJPY%252CEUR%252CBRL
+        
+        NetworkService.shared.performRequest(url: url, method: .get, parameters: nil, headers: headers, handler: completion)
     }
 }
