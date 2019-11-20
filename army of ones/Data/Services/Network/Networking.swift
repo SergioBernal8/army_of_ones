@@ -19,8 +19,8 @@ class NetworkService: Networking, BaseService {
         Logger.shared.log(from: self, with: .Error, message: "\(error.errorType)::\(error.errorMessage)")
     }
     
-    func printResponse<T>(response: T) {
-        Logger.shared.log(from: self, with: .Network, message: "Data: \(response)")
+    func printResponse<T>(response: T, logCase: LogCase = .Network) {
+        Logger.shared.log(from: self, with: logCase, message: "Data: \(response)")
     }
     
     static let shared = NetworkService()
@@ -45,7 +45,7 @@ class NetworkService: Networking, BaseService {
                     if let responseData = urlResponse.data {
                         let data: T? = JsonDecoder().decode(data: responseData)
                         if let parsedObject = data {
-                            self.printResponse(response: parsedObject)
+                            self.printResponse(response: parsedObject, logCase: .Other)
                             handler(.success(parsedObject))
                         } else {
                             let text = String(data: responseData, encoding: .utf8)

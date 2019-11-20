@@ -12,7 +12,7 @@ import UIKit
     var view: UIView!
     
     @IBOutlet weak var flagImageView: UIImageView!
-    @IBOutlet weak var topHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageHeightconstraint: NSLayoutConstraint!
     
     var maxHeight: CGFloat = 0
     
@@ -23,16 +23,30 @@ import UIKit
     }
     
     @IBInspectable var barPercent: CGFloat = 0.0 {
-           didSet {
-               guard barPercent >= 0 && barPercent <= 100 else { return }
-            topHeightConstraint.constant = maxHeight - (maxHeight * barPercent / 100)
-           }
-       }
-
+        didSet {
+            guard barPercent >= 0 && barPercent <= 100 else { return }
+            
+            if barPercent < 50 {
+                flagImageView.contentMode = .redraw
+            }
+            
+            let percent = self.barPercent / 100
+            self.imageHeightconstraint.constant = self.maxHeight * percent
+            
+            UIView.animate(withDuration: 2) {
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
     
     override func layoutSubviews() {
-        maxHeight = self.view.bounds.height
-         topHeightConstraint.constant = maxHeight - (maxHeight * barPercent / 100)
+        maxHeight = self.bounds.size.height
+    }
+            
+    func updateHeight(isLandscape: Bool) {
+        self.maxHeight = isLandscape ? self.bounds.size.width : self.bounds.size.height
+        let percent = self.barPercent / 100
+        self.imageHeightconstraint.constant = self.maxHeight * percent        
     }
     
     override init(frame: CGRect) {

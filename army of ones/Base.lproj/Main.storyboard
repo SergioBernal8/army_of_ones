@@ -16,13 +16,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SbV-aj-FtQ">
-                                <rect key="frame" x="157" y="144" width="100" height="40"/>
+                                <rect key="frame" x="66.333333333333343" y="144" width="281.66666666666663" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="EYD-7U-RMw"/>
                                     <constraint firstAttribute="height" constant="40" id="lfO-Ij-hRj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="postal-code"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" textContentType="postal-code"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Army Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ9-aa-D4i">
                                 <rect key="frame" x="66.333333333333343" y="74" width="281.66666666666663" height="40"/>
@@ -51,19 +50,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVf-vt-U0w" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33" width="88.666666666666671" height="562"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="562" id="Bbx-Fh-xUs"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="gbp"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="70"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvV-KU-QKc">
-                                                <rect key="frame" x="21.333333333333329" y="595" width="46" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvV-KU-QKc">
+                                                <rect key="frame" x="19.333333333333329" y="595" width="50" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="gRk-Ue-rIa"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -90,19 +89,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZF-4r-WGP" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33.666666666666686" width="88.333333333333329" height="561"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="561" id="QEM-QD-8ZB"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="eur"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="80"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIg-7f-C1H">
-                                                <rect key="frame" x="20.999999999999986" y="594.66666666666663" width="46" height="33.333333333333371"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIg-7f-C1H">
+                                                <rect key="frame" x="19" y="594.66666666666663" width="50" height="33.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="gfc-cx-tFX"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -129,19 +128,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-WF-uUl" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33" width="88.666666666666671" height="562"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="562" id="R1F-ff-fV3"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="jpy"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="90"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8H-34-gfV">
-                                                <rect key="frame" x="21.333333333333343" y="595" width="46" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8H-34-gfV">
+                                                <rect key="frame" x="19.333333333333343" y="595" width="50" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="9gb-Pn-zf4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -168,19 +167,19 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDI-hP-sfv" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33.666666666666686" width="88.333333333333329" height="561"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="561" id="5yn-fw-TfC"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="brl"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="100"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-vh-pVB">
-                                                <rect key="frame" x="21" y="594.66666666666663" width="46" height="33.333333333333371"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsK-vh-pVB">
+                                                <rect key="frame" x="19" y="594.66666666666663" width="50" height="33.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="UWN-wx-5gs"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -195,7 +194,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SbV-aj-FtQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ql-lg-1jc"/>
                             <constraint firstItem="1ud-v7-rBY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="66P-rA-TND"/>
@@ -204,15 +203,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ud-v7-rBY" secondAttribute="bottom" id="Gnv-Kk-wcy"/>
                             <constraint firstItem="SbV-aj-FtQ" firstAttribute="top" secondItem="zJ9-aa-D4i" secondAttribute="bottom" constant="30" id="NbZ-KE-Hu8"/>
                             <constraint firstItem="1ud-v7-rBY" firstAttribute="top" secondItem="SbV-aj-FtQ" secondAttribute="bottom" constant="50" id="PiX-9x-hpE"/>
+                            <constraint firstItem="SbV-aj-FtQ" firstAttribute="leading" secondItem="zJ9-aa-D4i" secondAttribute="leading" id="gcO-aA-yvE"/>
                             <constraint firstItem="1ud-v7-rBY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kyQ-wB-yXr"/>
+                            <constraint firstItem="SbV-aj-FtQ" firstAttribute="trailing" secondItem="zJ9-aa-D4i" secondAttribute="trailing" id="zID-KG-hnE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="brlChartView" destination="WDI-hP-sfv" id="wK1-kb-T6O"/>
                         <outlet property="brlCountLabel" destination="lsK-vh-pVB" id="aSm-iL-nsT"/>
+                        <outlet property="eurChartView" destination="bZF-4r-WGP" id="gyU-7l-aym"/>
                         <outlet property="eurCountLabel" destination="aIg-7f-C1H" id="Yhi-tK-Q5j"/>
+                        <outlet property="gbpChartView" destination="wVf-vt-U0w" id="bIF-P2-VMu"/>
                         <outlet property="gbpCountLabel" destination="PvV-KU-QKc" id="EEQ-xs-IVg"/>
                         <outlet property="inputTextField" destination="SbV-aj-FtQ" id="fYc-8F-hTW"/>
+                        <outlet property="jpyChartView" destination="wwb-WF-uUl" id="uCo-3a-1kS"/>
                         <outlet property="jpyCountLabel" destination="W8H-34-gfV" id="x1d-GU-FzZ"/>
                         <outlet property="stackView" destination="1ud-v7-rBY" id="47f-oX-h7I"/>
                     </connections>

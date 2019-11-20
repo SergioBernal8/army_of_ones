@@ -11,7 +11,7 @@ typealias ServerResponse<T: Codable> = (Result<T, ErrorResponse>) -> ()
 
 protocol BaseService {
     func printError(with error: ErrorResponse)
-    func printResponse<T>(response: T)
+    func printResponse<T>(response: T, logCase: LogCase)
 }
 
 struct ErrorResponse: Error {

@@ -25,13 +25,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riL-vc-PE8">
-                                <rect key="frame" x="355" y="126" width="100" height="40"/>
+                                <rect key="frame" x="264.5" y="126" width="281.5" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1US-go-a6Y"/>
                                     <constraint firstAttribute="height" constant="40" id="gMP-Wh-AJD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" textContentType="tel"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-Ra-xl9">
                                 <rect key="frame" x="0.0" y="266" width="810" height="814"/>
@@ -51,15 +50,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fr7-sx-jzo" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="747" id="t8K-Z8-LhO"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="gbp"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-LW-RSA">
-                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-LW-RSA">
+                                                <rect key="frame" x="65" y="780.5" width="50" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="ket-cG-mbA"/>
                                                 </constraints>
@@ -90,15 +89,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-ye-9pN" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="747" id="5n0-yD-ehD"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="eur"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="20"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQC-2g-s1W">
-                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQC-2g-s1W">
+                                                <rect key="frame" x="65" y="780.5" width="50" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="Utm-IF-noI"/>
                                                 </constraints>
@@ -129,15 +128,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIO-y7-TsU" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33" width="180" height="748"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="748" id="6lU-Mr-vrM"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="jpy"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="30"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-Mj-wkG">
-                                                <rect key="frame" x="67" y="781" width="46" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q1-Mj-wkG">
+                                                <rect key="frame" x="65" y="781" width="50" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="fTH-Um-SOa"/>
                                                 </constraints>
@@ -168,15 +167,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-Dz-zYQ" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33.5" width="180" height="747"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="747" id="Kkk-i4-vC8"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="brl"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="barPercent">
-                                                        <real key="value" value="40"/>
-                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA5-gh-7uR">
-                                                <rect key="frame" x="67" y="780.5" width="46" height="33.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA5-gh-7uR">
+                                                <rect key="frame" x="65" y="780.5" width="50" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="Rwo-o5-ARm"/>
                                                 </constraints>
@@ -204,7 +203,9 @@
                             <constraint firstItem="5Yv-ke-ehR" firstAttribute="centerX" secondItem="NPs-gG-swY" secondAttribute="centerX" id="WXc-9b-Tnc"/>
                             <constraint firstItem="riL-vc-PE8" firstAttribute="centerX" secondItem="NPs-gG-swY" secondAttribute="centerX" id="WbQ-VU-pDd"/>
                             <constraint firstAttribute="trailing" secondItem="tIf-Ra-xl9" secondAttribute="trailing" id="atg-wc-tNc"/>
+                            <constraint firstItem="riL-vc-PE8" firstAttribute="leading" secondItem="5Yv-ke-ehR" secondAttribute="leading" id="jQf-fP-wQe"/>
                             <constraint firstItem="tIf-Ra-xl9" firstAttribute="leading" secondItem="sXY-iL-hQE" secondAttribute="leading" id="uxW-Ws-nYI"/>
+                            <constraint firstItem="riL-vc-PE8" firstAttribute="trailing" secondItem="5Yv-ke-ehR" secondAttribute="trailing" id="wnI-vA-S5N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sXY-iL-hQE"/>
                     </view>

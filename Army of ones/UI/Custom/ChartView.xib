@@ -9,8 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartView" customModule="army_of_ones" customModuleProvider="target">
             <connections>
-                <outlet property="flagImageView" destination="Pda-0C-e2f" id="NT5-Xk-5lo"/>
-                <outlet property="topHeightConstraint" destination="6yN-aS-XpI" id="nbc-UD-mVJ"/>
+                <outlet property="flagImageView" destination="SuV-ai-Oyp" id="gUh-lo-nbg"/>
+                <outlet property="imageHeightconstraint" destination="y4P-ue-PeP" id="Hlw-WT-Rvd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -21,16 +21,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-BG-Wiw">
                     <rect key="frame" x="0.0" y="0.0" width="162" height="485"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brl" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-0C-e2f">
-                            <rect key="frame" x="0.0" y="100" width="162" height="385"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gbp" translatesAutoresizingMaskIntoConstraints="NO" id="SuV-ai-Oyp">
+                            <rect key="frame" x="0.0" y="484" width="162" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="y4P-ue-PeP"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="Pda-0C-e2f" firstAttribute="top" secondItem="xKT-BG-Wiw" secondAttribute="top" constant="100" id="6yN-aS-XpI"/>
-                        <constraint firstItem="Pda-0C-e2f" firstAttribute="leading" secondItem="xKT-BG-Wiw" secondAttribute="leading" id="RlQ-LS-jiE"/>
-                        <constraint firstAttribute="trailing" secondItem="Pda-0C-e2f" secondAttribute="trailing" id="t52-Fm-fKd"/>
-                        <constraint firstAttribute="bottom" secondItem="Pda-0C-e2f" secondAttribute="bottom" id="utd-VN-82J"/>
+                        <constraint firstAttribute="bottom" secondItem="SuV-ai-Oyp" secondAttribute="bottom" id="aez-Lr-qat"/>
+                        <constraint firstAttribute="trailing" secondItem="SuV-ai-Oyp" secondAttribute="trailing" id="jR9-er-G0b"/>
+                        <constraint firstItem="SuV-ai-Oyp" firstAttribute="leading" secondItem="xKT-BG-Wiw" secondAttribute="leading" id="nwN-cy-eW2"/>
                     </constraints>
                 </view>
             </subviews>
@@ -47,6 +49,6 @@
         </view>
     </objects>
     <resources>
-        <image name="brl" width="768" height="432"/>
+        <image name="gbp" width="640" height="320"/>
     </resources>
 </document>
