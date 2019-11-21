@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		99B4F161162C26B2CFC24C70 /* Pods_army_of_ones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A54C389BAD0B4F3A0DF5496 /* Pods_army_of_ones.framework */; };
+		B80CCCC12385025A009BE182 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CCCC02385025A009BE182 /* MainViewModel.swift */; };
+		B80CCCC5238503C6009BE182 /* Main_Ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CCCC3238503C6009BE182 /* Main_Ipad.storyboard */; };
+		B80CCCC7238503F1009BE182 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CCCC6238503F1009BE182 /* MainViewController.swift */; };
+		B80CCCC92385068B009BE182 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80CCCC82385068B009BE182 /* ChartView.xib */; };
+		B80CCCCB238506AC009BE182 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CCCCA238506AC009BE182 /* ChartView.swift */; };
+		B80EAD122385882200BF0777 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80EAD112385882200BF0777 /* CurrencyConverter.swift */; };
+		B80EAD142385DF6700BF0777 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80EAD132385DF6700BF0777 /* Formatter.swift */; };
 		B8E6589E2384CC7E002E4C9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E6589D2384CC7E002E4C9D /* Constants.swift */; };
 		B8EF5A1A2384D44700EEAE2D /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF5A192384D44700EEAE2D /* CurrencyResponse.swift */; };
 		B8F3837F23843B97006C4257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3837E23843B97006C4257 /* AppDelegate.swift */; };
 		B8F3838123843B97006C4257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3838023843B97006C4257 /* SceneDelegate.swift */; };
-		B8F3838323843B97006C4257 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3838223843B97006C4257 /* ViewController.swift */; };
 		B8F3838623843B97006C4257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838423843B97006C4257 /* Main.storyboard */; };
 		B8F3838823843B9D006C4257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838723843B9D006C4257 /* Assets.xcassets */; };
 		B8F3838B23843B9D006C4257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838923843B9D006C4257 /* LaunchScreen.storyboard */; };
@@ -42,12 +48,18 @@
 /* Begin PBXFileReference section */
 		6A54C389BAD0B4F3A0DF5496 /* Pods_army_of_ones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_army_of_ones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		937F61B2990E459E39647BDF /* Pods-army of ones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-army of ones.release.xcconfig"; path = "Target Support Files/Pods-army of ones/Pods-army of ones.release.xcconfig"; sourceTree = "<group>"; };
+		B80CCCC02385025A009BE182 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = "Army of ones/UI/Main/MainViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		B80CCCC4238503C6009BE182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Army of ones/Base.lproj/Main_Ipad.storyboard"; sourceTree = SOURCE_ROOT; };
+		B80CCCC6238503F1009BE182 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "Army of ones/UI/Main/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
+		B80CCCC82385068B009BE182 /* ChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChartView.xib; path = "Army of ones/UI/Custom/ChartView.xib"; sourceTree = SOURCE_ROOT; };
+		B80CCCCA238506AC009BE182 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChartView.swift; path = "Army of ones/UI/Custom/ChartView.swift"; sourceTree = SOURCE_ROOT; };
+		B80EAD112385882200BF0777 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyConverter.swift; path = "Army of ones/Utils/CurrencyConverter.swift"; sourceTree = SOURCE_ROOT; };
+		B80EAD132385DF6700BF0777 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = "Army of ones/Utils/Formatter.swift"; sourceTree = SOURCE_ROOT; };
 		B8E6589D2384CC7E002E4C9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8EF5A192384D44700EEAE2D /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		B8F3837B23843B97006C4257 /* army of ones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "army of ones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F3837E23843B97006C4257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F3838023843B97006C4257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8F3838223843B97006C4257 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8F3838523843B97006C4257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8F3838723843B9D006C4257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8F3838A23843B9D006C4257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +116,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B80CCCBF23850223009BE182 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B80CCCC02385025A009BE182 /* MainViewModel.swift */,
+				B80CCCC6238503F1009BE182 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B80CCCC22385039C009BE182 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B80CCCC82385068B009BE182 /* ChartView.xib */,
+				B80CCCCA238506AC009BE182 /* ChartView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		B8F3837223843B97006C4257 = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +163,8 @@
 				B8F383A22384476D006C4257 /* UI */,
 				B8F3837E23843B97006C4257 /* AppDelegate.swift */,
 				B8F3838023843B97006C4257 /* SceneDelegate.swift */,
-				B8F3838223843B97006C4257 /* ViewController.swift */,
 				B8F3838423843B97006C4257 /* Main.storyboard */,
+				B80CCCC3238503C6009BE182 /* Main_Ipad.storyboard */,
 				B8F3838723843B9D006C4257 /* Assets.xcassets */,
 				B8F3838923843B9D006C4257 /* LaunchScreen.storyboard */,
 				B8F3838C23843B9D006C4257 /* Info.plist */,
@@ -174,6 +204,8 @@
 		B8F383A22384476D006C4257 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B80CCCC22385039C009BE182 /* Custom */,
+				B80CCCBF23850223009BE182 /* Main */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -243,6 +275,8 @@
 			children = (
 				B8F383BF23844C32006C4257 /* Logger.swift */,
 				B8E6589D2384CC7E002E4C9D /* Constants.swift */,
+				B80EAD112385882200BF0777 /* CurrencyConverter.swift */,
+				B80EAD132385DF6700BF0777 /* Formatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -331,7 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F3838B23843B9D006C4257 /* LaunchScreen.storyboard in Resources */,
+				B80CCCC5238503C6009BE182 /* Main_Ipad.storyboard in Resources */,
 				B8F3838823843B9D006C4257 /* Assets.xcassets in Resources */,
+				B80CCCC92385068B009BE182 /* ChartView.xib in Resources */,
 				B8F3838623843B97006C4257 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,20 +429,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F383A723844827006C4257 /* BaseService.swift in Sources */,
+				B80EAD142385DF6700BF0777 /* Formatter.swift in Sources */,
 				B8F383B823844B0E006C4257 /* Networking.swift in Sources */,
-				B8F3838323843B97006C4257 /* ViewController.swift in Sources */,
 				B8F383AE238449F6006C4257 /* BaseEncoder.swift in Sources */,
 				B8F383B323844A73006C4257 /* MockDecoder.swift in Sources */,
 				B8E6589E2384CC7E002E4C9D /* Constants.swift in Sources */,
 				B8F3837F23843B97006C4257 /* AppDelegate.swift in Sources */,
+				B80CCCC7238503F1009BE182 /* MainViewController.swift in Sources */,
 				B8F383B023844A25006C4257 /* JsonDecoder.swift in Sources */,
 				B8F383B523844AA3006C4257 /* MockEncoder.swift in Sources */,
+				B80EAD122385882200BF0777 /* CurrencyConverter.swift in Sources */,
 				B8F383BA23844B41006C4257 /* CurrencyService.swift in Sources */,
+				B80CCCCB238506AC009BE182 /* ChartView.swift in Sources */,
 				B8EF5A1A2384D44700EEAE2D /* CurrencyResponse.swift in Sources */,
 				B8F3838123843B97006C4257 /* SceneDelegate.swift in Sources */,
 				B8F383C023844C32006C4257 /* Logger.swift in Sources */,
 				B8F383A92384485B006C4257 /* CurrencyRepository.swift in Sources */,
 				B8F383AC23844966006C4257 /* BaseDecoder.swift in Sources */,
+				B80CCCC12385025A009BE182 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +469,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B80CCCC3238503C6009BE182 /* Main_Ipad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B80CCCC4238503C6009BE182 /* Base */,
+			);
+			name = Main_Ipad.storyboard;
+			sourceTree = "<group>";
+		};
 		B8F3838423843B97006C4257 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
