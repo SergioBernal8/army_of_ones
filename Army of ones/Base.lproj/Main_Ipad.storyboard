@@ -16,16 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Army Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yv-ke-ehR">
-                                <rect key="frame" x="264.5" y="50" width="281.5" height="40"/>
+                                <rect key="frame" x="274" y="50" width="262.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WON-pD-JDc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riL-vc-PE8">
-                                <rect key="frame" x="264.5" y="126" width="281.5" height="40"/>
+                                <rect key="frame" x="274" y="126" width="262.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gMP-Wh-AJD"/>
                                 </constraints>
@@ -39,11 +39,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="814"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF1-G9-ZlM">
-                                                <rect key="frame" x="63" y="0.0" width="54" height="33.5"/>
+                                                <rect key="frame" x="69.5" y="0.0" width="41.5" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="miL-4q-dKX"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -78,11 +78,11 @@
                                         <rect key="frame" x="210" y="0.0" width="180" height="814"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxT-Td-KbZ">
-                                                <rect key="frame" x="63.5" y="0.0" width="53" height="33.5"/>
+                                                <rect key="frame" x="67.5" y="0.0" width="45" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="Jfh-Tj-h6z"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -117,11 +117,11 @@
                                         <rect key="frame" x="420" y="0.0" width="180" height="814"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35g-wT-sGV">
-                                                <rect key="frame" x="66" y="0.0" width="48" height="33"/>
+                                                <rect key="frame" x="68.5" y="0.0" width="43.5" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="yk7-kj-nKj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -156,11 +156,11 @@
                                         <rect key="frame" x="630" y="0.0" width="180" height="814"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-5J-2S4">
-                                                <rect key="frame" x="65.5" y="0.0" width="49.5" height="33.5"/>
+                                                <rect key="frame" x="69" y="0.0" width="42.5" height="33.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="XtR-HK-pSq"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -194,7 +194,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5Yv-ke-ehR" firstAttribute="top" secondItem="sXY-iL-hQE" secondAttribute="top" constant="50" id="0uG-b8-QXA"/>
                             <constraint firstItem="riL-vc-PE8" firstAttribute="top" secondItem="5Yv-ke-ehR" secondAttribute="bottom" constant="36" id="2ii-FQ-dhu"/>
@@ -224,9 +224,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="brl" width="768" height="432"/>
-        <image name="eur" width="600" height="401"/>
-        <image name="gbp" width="640" height="320"/>
-        <image name="jpy" width="740" height="505"/>
+        <image name="brl" width="1286" height="855"/>
+        <image name="eur" width="1290" height="861"/>
+        <image name="gbp" width="1296" height="859"/>
+        <image name="jpy" width="1493" height="989"/>
     </resources>
 </document>
