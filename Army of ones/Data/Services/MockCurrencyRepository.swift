@@ -17,7 +17,7 @@ class MockCurrencyRepository: CurrencyRepository {
     
     func hanlder() -> Result<CurrencyResponse,ErrorResponse> {
         if mockCase == .success {
-            let data = CurrencyResponse(base: "USD", success: true, timestamp: 123, rates: ["" : 0.0])
+            let data = CurrencyResponse(base: "USD", success: true, timestamp: 123, rates: ["GBP" : 1.3, "EUR":0.9, "JPY": 0.1, "BRL":0.6])
             return .success(data)
         } else {
             return.failure(ErrorResponse(errorType: .other, errorMessage: "error"))
