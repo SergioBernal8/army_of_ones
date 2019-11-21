@@ -104,12 +104,10 @@ extension MainViewController {
             stackView.spacing = isIpad ? 30 : 20
         }
         
-//        let orientation = UIDevice.current.orientation
-//        let landscape = orientation.isLandscape
-//        gbpChartView.updateHeight(isLandscape: landscape)
-//        eurChartView.updateHeight(isLandscape: landscape)
-//        jpyChartView.updateHeight(isLandscape: landscape)
-//        gbpChartView.updateHeight(isLandscape: landscape)
+        gbpChartView.adjustView()
+        eurChartView.adjustView()
+        jpyChartView.adjustView()
+        gbpChartView.adjustView()
     }
 }
 

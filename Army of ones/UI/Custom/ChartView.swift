@@ -25,28 +25,31 @@ import UIKit
     @IBInspectable var barPercent: CGFloat = 0.0 {
         didSet {
             guard barPercent >= 0 && barPercent <= 100 else { return }
-            
-            if barPercent < 50 {
-                flagImageView.contentMode = .redraw
-            }
-            
-            let percent = self.barPercent / 100
-            self.imageHeightconstraint.constant = self.maxHeight * percent
-            
-            UIView.animate(withDuration: 2) {
-                self.view.layoutIfNeeded()
-            }
+            updateHeight(animationTime: 2)
+        }
+    }
+    
+    func updateHeight(animationTime: TimeInterval) {
+        if barPercent < 50 {
+            flagImageView.contentMode = .redraw
+        }
+        
+        let percent = self.barPercent / 100
+        self.imageHeightconstraint.constant = self.maxHeight * percent
+        
+        UIView.animate(withDuration: animationTime) {
+            self.view.layoutIfNeeded()
         }
     }
     
     override func layoutSubviews() {
         maxHeight = self.bounds.size.height
     }
-            
-    func updateHeight(isLandscape: Bool) {
-        self.maxHeight = isLandscape ? self.bounds.size.width : self.bounds.size.height
-        let percent = self.barPercent / 100
-        self.imageHeightconstraint.constant = self.maxHeight * percent        
+    
+    func adjustView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.updateHeight(animationTime: 0.1)
+        }
     }
     
     override init(frame: CGRect) {

@@ -156,7 +156,7 @@
                                         <rect key="frame" x="325.66666666666669" y="0.0" width="88.333333333333314" height="628"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-yy-fqR">
-                                                <rect key="frame" x="19.333333333333311" y="0.0" width="49.666666666666657" height="33.666666666666664"/>
+                                                <rect key="frame" x="19.333333333333314" y="0.0" width="49.666666666666657" height="33.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33.5" id="MBa-1B-oUC"/>
                                                 </constraints>
