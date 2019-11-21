@@ -32,8 +32,11 @@ class MainViewModel {
     var rates = [String:Double]()
     let bag = DisposeBag()
     var chartScale = 1.0
+    var currencyRepository: CurrencyRepository
     
-    init() {
+    init(repository: CurrencyRepository) {
+        self.currencyRepository = repository
+        
         inputText.asObservable().distinctUntilChanged().subscribe(onNext: { (text) in
             if let amount = Double(text), amount > 0 {
                 self.convertCurrency(for: amount)
@@ -101,7 +104,7 @@ class MainViewModel {
     func getCurrencies(){
         subjectOnLoading.onNext(true)
         
-        CurrencyService().getGBGCurrency { (response: Result<CurrencyResponse, ErrorResponse>) in
+        currencyRepository.getGBGCurrency { (response: Result<CurrencyResponse, ErrorResponse>) in
             self.subjectOnLoading.onNext(false)
             switch response {
             case .success(let data):

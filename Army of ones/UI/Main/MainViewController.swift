@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var jpyChartView: ChartView!
     @IBOutlet weak var brlChartView: ChartView!
     
-    let model = MainViewModel()
+    let model = MainViewModel(repository: CurrencyService())
     let bag = DisposeBag()
     var hasInitalizated = false
     

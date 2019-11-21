@@ -9,9 +9,21 @@
 import Foundation
 
 class MockEncoder: BaseEncoder {
+    
+    var mockCase: MockEncoderCase = MockEncoderCase.success
+    
     func encode<T>(data: T) -> String where T: Encodable {
-        let jsonData = try! JSONEncoder().encode(data)
-        let jsonString = String(data: jsonData, encoding: .utf8)!
-        return jsonString
+        if mockCase == .success {
+            let jsonData = try! JSONEncoder().encode(data)
+            let jsonString = String(data: jsonData, encoding: .utf8)!
+            return jsonString
+        } else {
+            return ""
+        }
     }
+}
+
+enum MockEncoderCase {
+    case success
+    case error
 }
