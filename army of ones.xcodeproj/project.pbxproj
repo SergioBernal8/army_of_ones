@@ -17,18 +17,19 @@
 		B80EAD142385DF6700BF0777 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80EAD132385DF6700BF0777 /* Formatter.swift */; };
 		B8E6589E2384CC7E002E4C9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E6589D2384CC7E002E4C9D /* Constants.swift */; };
 		B8EF5A1A2384D44700EEAE2D /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF5A192384D44700EEAE2D /* CurrencyResponse.swift */; };
+		B8F22C7D238619EB003FF095 /* DecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F22C7C238619EB003FF095 /* DecoderTest.swift */; };
+		B8F22C8123862397003FF095 /* MockCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F22C8023862397003FF095 /* MockCurrencyRepository.swift */; };
+		B8F22C8323862718003FF095 /* CurrencyServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F22C8223862718003FF095 /* CurrencyServiceTest.swift */; };
 		B8F3837F23843B97006C4257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3837E23843B97006C4257 /* AppDelegate.swift */; };
 		B8F3838123843B97006C4257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3838023843B97006C4257 /* SceneDelegate.swift */; };
 		B8F3838623843B97006C4257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838423843B97006C4257 /* Main.storyboard */; };
 		B8F3838823843B9D006C4257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838723843B9D006C4257 /* Assets.xcassets */; };
 		B8F3838B23843B9D006C4257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F3838923843B9D006C4257 /* LaunchScreen.storyboard */; };
-		B8F3839623843B9D006C4257 /* army_of_onesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F3839523843B9D006C4257 /* army_of_onesTests.swift */; };
 		B8F383A723844827006C4257 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383A623844827006C4257 /* BaseService.swift */; };
 		B8F383A92384485B006C4257 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383A82384485B006C4257 /* CurrencyRepository.swift */; };
 		B8F383AC23844966006C4257 /* BaseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383AB23844966006C4257 /* BaseDecoder.swift */; };
 		B8F383AE238449F6006C4257 /* BaseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383AD238449F6006C4257 /* BaseEncoder.swift */; };
 		B8F383B023844A25006C4257 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383AF23844A25006C4257 /* JsonDecoder.swift */; };
-		B8F383B323844A73006C4257 /* MockDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383B223844A73006C4257 /* MockDecoder.swift */; };
 		B8F383B523844AA3006C4257 /* MockEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383B423844AA3006C4257 /* MockEncoder.swift */; };
 		B8F383B823844B0E006C4257 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383B723844B0E006C4257 /* Networking.swift */; };
 		B8F383BA23844B41006C4257 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F383B923844B41006C4257 /* CurrencyService.swift */; };
@@ -57,6 +58,9 @@
 		B80EAD132385DF6700BF0777 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = "Army of ones/Utils/Formatter.swift"; sourceTree = SOURCE_ROOT; };
 		B8E6589D2384CC7E002E4C9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8EF5A192384D44700EEAE2D /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		B8F22C7C238619EB003FF095 /* DecoderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTest.swift; sourceTree = "<group>"; };
+		B8F22C8023862397003FF095 /* MockCurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockCurrencyRepository.swift; path = "Army of ones/Data/Services/MockCurrencyRepository.swift"; sourceTree = SOURCE_ROOT; };
+		B8F22C8223862718003FF095 /* CurrencyServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTest.swift; sourceTree = "<group>"; };
 		B8F3837B23843B97006C4257 /* army of ones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "army of ones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F3837E23843B97006C4257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F3838023843B97006C4257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,14 +69,12 @@
 		B8F3838A23843B9D006C4257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8F3838C23843B9D006C4257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F3839123843B9D006C4257 /* army of onesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "army of onesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8F3839523843B9D006C4257 /* army_of_onesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = army_of_onesTests.swift; sourceTree = "<group>"; };
 		B8F3839723843B9D006C4257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F383A623844827006C4257 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		B8F383A82384485B006C4257 /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
 		B8F383AB23844966006C4257 /* BaseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDecoder.swift; sourceTree = "<group>"; };
 		B8F383AD238449F6006C4257 /* BaseEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEncoder.swift; sourceTree = "<group>"; };
 		B8F383AF23844A25006C4257 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
-		B8F383B223844A73006C4257 /* MockDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDecoder.swift; sourceTree = "<group>"; };
 		B8F383B423844AA3006C4257 /* MockEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEncoder.swift; sourceTree = "<group>"; };
 		B8F383B723844B0E006C4257 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B8F383B923844B41006C4257 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
@@ -175,8 +177,9 @@
 		B8F3839423843B9D006C4257 /* army of onesTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8F3839523843B9D006C4257 /* army_of_onesTests.swift */,
 				B8F3839723843B9D006C4257 /* Info.plist */,
+				B8F22C7C238619EB003FF095 /* DecoderTest.swift */,
+				B8F22C8223862718003FF095 /* CurrencyServiceTest.swift */,
 			);
 			path = "army of onesTests";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			children = (
 				B8F383B623844AFE006C4257 /* Network */,
 				B8F383B923844B41006C4257 /* CurrencyService.swift */,
+				B8F22C8023862397003FF095 /* MockCurrencyRepository.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -241,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				B8F383AF23844A25006C4257 /* JsonDecoder.swift */,
-				B8F383B223844A73006C4257 /* MockDecoder.swift */,
 			);
 			path = Decoder;
 			sourceTree = "<group>";
@@ -428,11 +431,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F22C8123862397003FF095 /* MockCurrencyRepository.swift in Sources */,
 				B8F383A723844827006C4257 /* BaseService.swift in Sources */,
 				B80EAD142385DF6700BF0777 /* Formatter.swift in Sources */,
 				B8F383B823844B0E006C4257 /* Networking.swift in Sources */,
 				B8F383AE238449F6006C4257 /* BaseEncoder.swift in Sources */,
-				B8F383B323844A73006C4257 /* MockDecoder.swift in Sources */,
 				B8E6589E2384CC7E002E4C9D /* Constants.swift in Sources */,
 				B8F3837F23843B97006C4257 /* AppDelegate.swift in Sources */,
 				B80CCCC7238503F1009BE182 /* MainViewController.swift in Sources */,
@@ -454,7 +457,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8F3839623843B9D006C4257 /* army_of_onesTests.swift in Sources */,
+				B8F22C7D238619EB003FF095 /* DecoderTest.swift in Sources */,
+				B8F22C8323862718003FF095 /* CurrencyServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
